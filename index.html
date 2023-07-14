@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BB</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: black;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      
+    }
+
+    .texto_box1 {
+      width: 385px;
+      height: 385px;
+      color: #ffffff;
+      font-family: 'Verdana', sans-serif;
+      text-align: justify;
+      font-weight: bold;
+      text-shadow: 0px 0px 10px #fff;
+    }
+
+    .box1 {
+      width: 400px;
+      height: 240px;
+      background-image: url("images/box1_image.png");
+      border: 3px solid #ffffff;
+      border-style: ridge;
+      border-top-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+      border-right-color: #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .box_form {
+      background-image: url("images/box1_image.png");
+      border-style: ridge;
+      border-top-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+      border-right-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 20%;
+    }
+
+    fieldset {
+      font-family: 'Verdana', sans-serif;
+      border-style: ridge;
+      color: white;
+      text-shadow: 0px 0px 10px #fff;
+      border-top-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+      border-right-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    legend {
+      color: white;
+      text-shadow: 0px 0px 10px #fff;
+      background-color: black;
+      border-style: ridge;
+      border-top-color: #ffffff;
+      border-bottom-color: #ffffff;
+      border-left-color: #ffffff;
+      border-right-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .inputBox {
+      position: relative;
+    }
+
+    .inputUser {
+      background: none;
+      border: none;
+      border-bottom: 1px ridge white;
+      outline: none;
+      color: white;
+      font-size: 15px;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+
+    .labelInput {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      pointer-events: none;
+      transition: .5s;
+    }
+
+    .inputUser:focus~.labelInput,
+    .inputUser:valid~.labelInput {
+      top: -17px;
+      font-size: 12px;
+      color: white;
+    }
+
+    #data_nasc {
+      border: none;
+      padding: 7px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    #submit {
+      background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(30, 30, 30));
+      width: 100%;
+      border: none;
+      padding: 15px;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    #submit:hover {
+      background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(20, 20, 20));
+    }
+    
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <!-- Insere o Favicon -->
+</head>
+
+<body>
+  
+<!-- Exemplo de código HTML para adicionar uma div como contêiner do ícone personalizado do Instagram -->
+<div class="instagram-icon-container">
+  <a href="https://www.instagram.com/brasilbytebuilders/" target="_blank" rel="noopener">
+    <img src="images/icon_ig.png" alt="Instagram">
+  </a>
+</div>
+
+  <div class="banner_pag_inicial">
+    <img src="images/banner-bb.png" alt="banner bb">
+    <!-- Insere o Banner -->
+  </div>
+  <br>
+  <div class="box1">
+    <p class="texto_box1"><b>Primeiramente, </b>se você quer saber como nós da Byte Builders podemos ajudá-lo a
+      transformar sua empresa em
+      uma empresa lucrativa e de fácil administração, preencha o formulário abaixo com seu nome, telefone, dúvida e
+      e-mail, para que possamos entrar em contato com você. Nossa equipe de especialistas ficará feliz em discutir suas
+      necessidades e objetivos de negócios e ajudá-lo a encontrar a solução perfeita para sua empresa.</p>
+  </div>
+  <br>
+  <br>
+  <div class="box_form">
+    <form action="">
+      <fieldset>
+        <legend><b>Formulário para contato</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome" class="labelInput">Nome completo</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="email" name="email" id="email" class="inputUser" required>
+          <label for="email" class="labelInput">Email</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+          <label for="telefone" class="labelInput">Telefone</label>
+        </div>
+        <br>
+        <p>Sexo:</p>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="outro" name="genero" value="outro" required>
+        <label for="outro">Outro</label>
+        <br>
+        <br>
+        <label for="data_nasc"><b>Data de Nascimento:</b></label>
+        <br>
+        <br>
+        <input type="date" name="data_nasc" id="data_nasc" required>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="cidade" name="cidade" id="cidade" class="inputUser" required>
+          <label for="text" class="labelInput">Cidade</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="estado" id="estado" class="inputUser" required>
+          <label for="text" class="labelInput">Estado</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="endereco" id="endereco" class="inputUser" required>
+          <label for="endereco" class="labelInput">Endereço</label>
+        </div>
+        <br>
+        <br>
+        <input type="submit" name="submit" id="submit">
+       </fieldset>
+    </form>
+<br>
+  </div>
+<br><br>
+</body>
+
+</html>
