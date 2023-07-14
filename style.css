@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+  
+/* Exemplo de código CSS para estilizar o contêiner do ícone do Instagram */
+.instagram-icon-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px; /* Ajuste a margem conforme necessário para controlar o espaçamento do ícone em relação à borda da página */
+  z-index: 9999; /* Define a camada de sobreposição do ícone */
+}
+
+/* Estilo opcional para redimensionar o ícone */
+.instagram-icon-container img {
+  width: 181px;
+  height: 117px;
+}
+
+
+
